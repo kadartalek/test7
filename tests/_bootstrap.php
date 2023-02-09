@@ -3,8 +3,6 @@
 (new class {
     public function run(): void
     {
-        $root = \dirname(__DIR__);
-
-        require $root . '/vendor/autoload.php';
+        require \dirname(__DIR__) . '/vendor/autoload.php';
     }
 })->run();
