@@ -67,11 +67,11 @@ class ParseCommand extends Command
     {
         $baseName = \basename($outputFileName);
         $realFileName = \realpath($outputFileName);
-        if (false !== $realFileName) {
-            $fileDir = \dirname($realFileName);
-        } else {
+        if (false === $realFileName) {
             $fileDir = \realpath('');
             $realFileName = $fileDir . '/' . $baseName;
+        } else {
+            $fileDir = \dirname($realFileName);
         }
 
         try {
