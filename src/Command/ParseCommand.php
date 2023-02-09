@@ -4,8 +4,6 @@ namespace App\Command;
 
 use App\Command\Parse\ParseError;
 use App\Parsing\Parser;
-use App\Tree\Item;
-use App\Tree\ItemsList;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -67,6 +65,8 @@ class ParseCommand extends Command
     {
         $realFileName = \realpath($outputFileName);
         if (false === $realFileName) {
+            /// Если файла не существует,
+            /// формируем полное имя из директории
             $fileDir = \realpath('');
             $baseName = \basename($outputFileName);
             $realFileName = $fileDir . '/' . $baseName;
