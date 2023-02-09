@@ -65,10 +65,10 @@ class ParseCommand extends Command
      */
     private function writeResult(mixed $outputFileName, string $resultString): string
     {
-        $baseName = \basename($outputFileName);
         $realFileName = \realpath($outputFileName);
         if (false === $realFileName) {
             $fileDir = \realpath('');
+            $baseName = \basename($outputFileName);
             $realFileName = $fileDir . '/' . $baseName;
         } else {
             $fileDir = \dirname($realFileName);
