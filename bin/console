@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+use Kadanin\SymfonyPsr4CommandLoader\NamespaceCommandLoader;
+use Symfony\Component\Console\Application;
+
+define('I_AM_GROOT', dirname(__DIR__));
+require I_AM_GROOT . '/vendor/autoload.php';
+
+$application = new Application();
+
+$application->setDefaultCommand('parse')
+    ->setCommandLoader(new NamespaceCommandLoader(I_AM_GROOT . '/composer.json'))
+;
+$application->run();

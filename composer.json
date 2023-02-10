@@ -1,0 +1,39 @@
+{
+  "name": "kadanin/test7",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Kadanin"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.1",
+    "ext-intl": "*",
+    "ext-mbstring": "*",
+    "ext-ctype": "*",
+    "ext-iconv": "*",
+    "kadanin/symfony-psr4-command-loader": "^2.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "tests\\": "tests/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    }
+  }
+}
