@@ -16,6 +16,6 @@ class HelloCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln("nuqneH 'u'");
-        return Command::SUCCESS;
+        return self::SUCCESS;
     }
 }

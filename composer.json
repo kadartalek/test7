@@ -13,8 +13,7 @@
     "ext-mbstring": "*",
     "ext-ctype": "*",
     "ext-iconv": "*",
-    "symfony/console": "^6.2",
-    "symfony/string": "^6.2"
+    "kadanin/symfony-psr4-command-loader": "^2.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
