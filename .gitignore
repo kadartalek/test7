@@ -5,3 +5,5 @@ vendor
 vendor/
 
 /composer.phar
+/box.phar
+/test7.phar

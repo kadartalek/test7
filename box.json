@@ -1,0 +1,13 @@
+{
+  "main": "bin/console",
+  "directories": ["src", "vendor"],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["Tests", "tests"],
+      "in": "vendor"
+    }
+  ],
+  "compression": "GZ",
+  "output": "test7.phar"
+}
