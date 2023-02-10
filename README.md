@@ -8,13 +8,21 @@
 
 ## Описание установки и работы
 
+### PHAR
+
+Установить `php8.1`
+
+Если нужно просто выполнить, не глядя код, то можно скачать в [релизах](https://github.com/kadartalek/test7/releases) `test7.phar` и использовать его как `php8.1 test7.phar task/input.csv output.json` или `test7.phar task/input.csv output.json` (если настроены права на выполнение и версия `PHP`)
+
+### Полный код приложения
+
+Установить `php8.1`
+
 Установить git, клонировать проект
 
 `git clone git@github.com:kadartalek/test7.git`
 
 Перейти в папку проекта `cd test7`
-
-Установить `php8.1`
 
 Установить `composer` как приложение или в корень проекта
 
