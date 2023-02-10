@@ -30,7 +30,7 @@
 
 `bin/console task/input.csv output.json`
 
-или (в зависимости от установки PHP)
+или (в зависимости от установки `PHP`)
 
 `php8.1 bin/console task/input.csv output.json`
 
